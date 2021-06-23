@@ -3,7 +3,7 @@ import { ICreate } from "../commonTypes";
 
 
 class Services {
-    AXIOS = axios.create({ baseURL: "http://localhost:8000" });
+    AXIOS = axios.create({ baseURL: "https://my-json-server.typicode.com/JohnLawliet/material-typescript" });
     async getData(){
         try{
             const res = await this.AXIOS.get('/notes')
